@@ -1,1 +1,1 @@
-# GraphQL-vs-REST
+# GraphQL vs REST - Um experimento controlado.pdf
