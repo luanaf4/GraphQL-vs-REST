@@ -50,26 +50,34 @@ Este experimento visa comparar quantitativamente o desempenho entre APIs GraphQL
     - Consultas complexas (múltiplas relações)
    
   **- Dados coletados**
+  
       - Consultas básicas:
+      
         - Nome do repositório
         - Descrição
         - Número de stars
         - Número de forks
         - Linguagem principal
+        
       - Consultas médias:
+      
         - Informações básicas do repositório
         - Lista de issues abertas
         - Lista de pull requests abertos
         - Status de cada item
         - Autores das issues/PRs
+        
       - Consultas Complexas:
+      
         - Todas as informações das consultas médias
         - Lista de contribuidores
         - Estatísticas de contribuição
         - Distribuição de linguagens
-   
+
+
 > [!NOTE]
 > Enquanto o REST baseia-se em endpoints predefinidos, o GraphQL permite consultas flexíveis através de schemas.
+
    
 #### Objetos Experimentais
   - API do GitHub (v3 para REST, v4 para GraphQL)
