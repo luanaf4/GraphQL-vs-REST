@@ -33,14 +33,65 @@ Este experimento visa comparar quantitativamente o desempenho entre APIs GraphQL
 - Independentes:
   - Tipo de API (GraphQL/REST)
   - Complexidade das consultas
-  - Volume de dados retornados
+  - Repositório consultado
   
 #### Tratamentos
 
-  - Consultas via API GraphQL
-  - Consultas via API REST
- 
+  **- Consultas via REST API:**
+
+    - Consultas básicas (single endpoint)
+    - Consultas médias (2-3 endpoints)
+    - Consultas complexas (4+ endpoints)
+   
+  **- Consultas via GraphQL API:**
+
+    - Consultas básicas (dados simples)
+    - Consultas médias (dados relacionados)
+    - Consultas complexas (múltiplas relações)
+   
+  **- Dados coletados**
+      - Consultas básicas:
+        - Nome do repositório
+        - Descrição
+        - Número de stars
+        - Número de forks
+        - Linguagem principal
+      - Consultas médias:
+        - Informações básicas do repositório
+        - Lista de issues abertas
+        - Lista de pull requests abertos
+        - Status de cada item
+        - Autores das issues/PRs
+      - Consultas Complexas:
+        - Todas as informações das consultas médias
+        - Lista de contribuidores
+        - Estatísticas de contribuição
+        - Distribuição de linguagens
+   
+> [!NOTE]
+> Enquanto o REST baseia-se em endpoints predefinidos, o GraphQL permite consultas flexíveis através de schemas.
+   
+#### Objetos Experimentais
+  - API do GitHub (v3 para REST, v4 para GraphQL)
+  - 5 repositórios mais populares do GitHub
+    
+    - Dados coletados:
+      - Informações básicas do repositório
+      - Issues e Pull Requests
+      - Contribuidores e linguagens
+      
 #### Projeto Experimental
+
+  - Design fatorial 2×3 (2 APIs × 3 níveis de complexidade)
+  - Between-subjects design
+  - Randomização na ordem de execução
+  - Contrabalanceamento para evitar efeitos de ordem
+
+#### Quantidade de Medições
+
+  - 30 execuções por combinação de tratamento
+  - 5 repositórios × 3 níveis de complexidade × 2 APIs
+  - Total: 450 medições (90 por repositório)
 
 ------------------------
 
@@ -48,9 +99,9 @@ Este experimento visa comparar quantitativamente o desempenho entre APIs GraphQL
 
   - Configuração de Hardware:
 
-    - Processador: ...
-    - Memória RAM: ...
-    - Sistema Operacional: ...
+    - Processador: Apple M2
+    - Memória RAM: 8 GB
+    - Sistema Operacional: macOS
    
 #### Procedimento de Execução
 
@@ -58,6 +109,24 @@ Este experimento visa comparar quantitativamente o desempenho entre APIs GraphQL
 
 ## Ameaças à Validade
 
+  - Validade Interna:
+
+    - Variação do desempenho da rede
+    - Latência da API do GitHub
+    - Cache do sistema
+    - Limite de taxa da API
+   
+  - Validade Externa:
+
+    - Limitação a uma única plataforma (GitHub)
+    - Amostra limitada de repositórios
+    - Complexidade artificial das consultas
+    
+  - Validade de Construto:
+
+    - Métricas podem não representar completamente o desempenho
+    - Simplificação das consultas reais
+      
 ------------------
 
 ## Resultados
