@@ -2,7 +2,12 @@
 
 ## Introdução
 
-Este experimento visa avaliar quantitativamente os benefícios da adoção de uma API GraphQL em comparação com uma API REST, focando em duas hipóteses principais:
+Este experimento visa comparar quantitativamente o desempenho entre APIs GraphQL e REST, focando em duas métricas principais: tempo de resposta e tamanho das respostas. O estudo busca responder às seguintes questões de pesquisa:
+
+**-** **RQ1: Respostas às consultas GraphQL são mais rápidas que respostas às consultas REST?**
+
+**- RQ2: Respostas às consultas GraphQL tem tamanho menor que respostas às consultas REST?**
+
 
 ## Hipóteses de Pesquisa
 #### RQ1. Respostas às consultas GraphQL são mais rápidas que respostas às consultas REST?
