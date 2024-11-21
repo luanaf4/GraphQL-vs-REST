@@ -37,42 +37,42 @@ Este experimento visa comparar quantitativamente o desempenho entre APIs GraphQL
   
 #### Tratamentos
 
-  **- Consultas via REST API:**
+**- Consultas via REST API:**
 
-    - Consultas básicas (single endpoint)
-    - Consultas médias (2-3 endpoints)
-    - Consultas complexas (4+ endpoints)
+   - Consultas básicas (single endpoint)
+   - Consultas médias (2-3 endpoints)
+   - Consultas complexas (4+ endpoints)
    
-  **- Consultas via GraphQL API:**
+**- Consultas via GraphQL API:**
 
-    - Consultas básicas (dados simples)
-    - Consultas médias (dados relacionados)
-    - Consultas complexas (múltiplas relações)
+   - Consultas básicas (dados simples)
+   - Consultas médias (dados relacionados)
+   - Consultas complexas (múltiplas relações)
    
   **- Dados coletados**
   
-      - Consultas básicas:
+- Consultas básicas:
       
-        - Nome do repositório
-        - Descrição
-        - Número de stars
-        - Número de forks
-        - Linguagem principal
+   - Nome do repositório
+   - Descrição
+   - Número de stars
+   - Número de forks
+   - Linguagem principal
         
-      - Consultas médias:
+- Consultas médias:
       
-        - Informações básicas do repositório
-        - Lista de issues abertas
-        - Lista de pull requests abertos
-        - Status de cada item
-        - Autores das issues/PRs
+   - Informações básicas do repositório
+   - Lista de issues abertas
+   - Lista de pull requests abertos
+   - Status de cada item
+   - Autores das issues/PRs
         
-      - Consultas Complexas:
+- Consultas Complexas:
       
-        - Todas as informações das consultas médias
-        - Lista de contribuidores
-        - Estatísticas de contribuição
-        - Distribuição de linguagens
+   - Todas as informações das consultas médias
+   - Lista de contribuidores
+   - Estatísticas de contribuição
+   - Distribuição de linguagens
 
 
 > [!NOTE]
