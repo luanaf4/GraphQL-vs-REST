@@ -156,21 +156,27 @@ A análise do tamanho das respostas revela uma diferença ainda maior entre as d
 **Consultas Básicas:** 
 
 **REST:** média de 6,983 bytes (freeCodeCamp)
+
 **GraphQL:** média de 176 bytes
+
 Redução de 97.48%
 Esta diferença significativa mesmo em consultas básicas sugere que o REST está enviando dados desnecessários mesmo em operações simples.
 
 **Consultas Médias:** 
 
 **REST:** varia de 91,129 a 341,385 bytes
+
 **GraphQL:** varia de 1,460 a 11,659 bytes
+
 Redução média de 94.83%
 O aumento da diferença em consultas médias reflete a capacidade do GraphQL de selecionar precisamente os dados necessários.
 
 **Consultas Complexas:** A maior diferença foi observada em consultas complexas:
 
 **REST:** até 1,110,250 bytes 
+
 **GraphQL:** máximo de 20,764 bytes
+
 Redução de até 99.64%
 
 
