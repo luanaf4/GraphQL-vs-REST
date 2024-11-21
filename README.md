@@ -13,7 +13,7 @@ O objetivo deste experimento é responder às seguintes perguntas de pesquisa:
 
 O experimento utiliza um design fatorial 2x3 (2 tipos de API x 3 níveis de complexidade de consulta) com 30 repetições por tratamento. As métricas coletadas incluem tempo de execução (ms) e tamanho da resposta (bytes). Cinco repositórios populares do GitHub foram selecionados como objetos de estudo, e as consultas foram projetadas para simular cenários de uso realistas.
 
-## Como Executar
+## Instruções
 
 1. **Clone o repositório:**
 
